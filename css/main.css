@@ -45,11 +45,6 @@ div.centered {
   transform: translateX(-50%) translateY(-50%);
 }
 
-div.bgGradient {
-  z-index: -1;
-}
-
-
 h1.title {
   font-family: "press start 2p", sans-serif;
   font-size: 30px;
