@@ -6,7 +6,7 @@
 <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 <!-- stylesheet -->
-<link type="text/css" rel="stylesheet" href="css/test.css"/>
+<link type="text/css" rel="stylesheet" href="css/galls.css"/>
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Julius+Sans+One|Poiret+One|Press+Start+2P|Unica+One|Open+Sans+Condensed:300" rel="stylesheet">
 <!-- animate -->
@@ -18,13 +18,17 @@
 </head>
 
 <body>
-  <div class="clouds"></div>
 
-  <div class="centered">
-    <div class="animated fadeIn">
-      <h1 class="title">Online Gallery</h1>
-      <input type="text" placeholder="Name" class="enterNameField"></input>
-    </div>
+  <div class="stars"></div>
+
+  <div class="topNav animated fadeIn">
+    <a href="gallery.html" class="onlineGallery"> Online Gallery </a>
+    <a href = "test1.html"><img src="assets/pictologo.png"></img></a>
+    <a href="collection.html" class="ownGallery"> My Collection </a>
+    <a href="#" class="logoutBtn"> Log out </a>
+  </div>
+
+  <div class = "displayPhotos">
 
   </div>
 
@@ -52,4 +56,6 @@
   firebase.initializeApp(config);
 
 </script>
+<script src="gallery.js"></script>
+<script src="logout.js"></script>
 </html>
