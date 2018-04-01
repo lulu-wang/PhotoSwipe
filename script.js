@@ -26,14 +26,25 @@ $(document).ready(function() {
         name: personName,
         collection: ["cool-story-bro"]
       })
+      window.location.href="/test1.html"
     }
   });
 
-  $('.enterBtn').click(function (){
+  $('.loginBtn').click(function (){
     firebase.auth().signInAnonymously().catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
     });
+
+  });
+
+  $('.logoutBtn').click(function (){
+    firebase.auth().signOut().then(function() {
+      //sign out successful
+      window.location.href="/"
+    }, function (error) {
+      //unsuccessful
+    }) ;
 
   });
 

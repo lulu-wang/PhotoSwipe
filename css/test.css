@@ -68,6 +68,14 @@ div.topNav {
   font-family: "press start 2p", sans-serif;
   font-size: 11px;
   color: white;
+  padding-bottom: 20px;
+}
+
+.logoutBtn {
+  position: absolute;
+  display: inline-block;
+  float: right;
+  right: 20px;
 }
 
 a:hover {
