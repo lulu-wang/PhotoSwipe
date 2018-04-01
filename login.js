@@ -21,7 +21,7 @@ $(document).ready(function() {
         name: personName,
         collection: ["cool-story-bro"]
       })
-      window.location.href="/test1.html"
+      window.setTimeout(() => window.location.href="/test1.html", 500);
     }
   });
 });
