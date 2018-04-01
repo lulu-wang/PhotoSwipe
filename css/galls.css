@@ -52,7 +52,9 @@ div.poloroid {
 }
 
 div.poloroid .image {
+  z-index: 100;
   margin:15px;
+  height:250px;
   background-color: black;
   background-position: center;
   background-size: cover;
