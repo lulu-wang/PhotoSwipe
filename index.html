@@ -20,14 +20,39 @@
 <body>
   <div class="clouds"></div>
 
+  <div class = "centered">
+
     <div class = "animated fadeIn">
       <img src = "assets/pictologo.png"></img>
       <h2 class = "subtitle">Playful Photo Collecting</h2>
       <input type = "text" placeholder = "Name" class = "enterNameField"></input>
-      <a href="test1.html"><h2 class="enterBtn"> <span>Enter</span> </h2></a>
+      <a href="#"><h2 class="enterBtn"> <span>Enter</span> </h2></a>
     </div>
 
   </div>
 
 </body>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"/>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyClJKgpiVMpd8f-IrRqqFxDn7D6J0b2CcU",
+    authDomain: "photoswip-715e5.firebaseapp.com",
+    databaseURL: "https://photoswip-715e5.firebaseio.com",
+    projectId: "photoswip-715e5",
+    storageBucket: "photoswip-715e5.appspot.com",
+    messagingSenderId: "138544453214"
+  };
+  firebase.initializeApp(config);
+
+</script>
 </html>
