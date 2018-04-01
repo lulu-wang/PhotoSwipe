@@ -22,9 +22,7 @@ $(document).ready(function() {
 
 function addPhoto(id, src) {
   var thing = $('<div>', {
-    class: 'scroll-item',
-    width: '300px',
-    height: '400px'
+    class: 'scroll-item'
   }).on('wheel', flick).data('key', id).data('offset', 0).append($('<div>', {
     class: 'image'
   }).css('background-image', 'url(' + src + ')'));
