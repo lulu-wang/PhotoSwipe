@@ -4,7 +4,13 @@
     url('../assets/fonts/moderna.ttf');
 }
 
+html, body {
+  margin: 0px;
+}
+
 body {
+
+  overflow: hidden;
   background-color:#F4B5FF;
   max-height: 100vh;
   font-family: sans-serif;

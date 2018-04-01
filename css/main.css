@@ -4,14 +4,19 @@
     url('../assets/fonts/moderna.ttf');
 }
 
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   background-color:#F4B5FF;
   max-height: 100vh;
   font-family: sans-serif;
   background-image: url('../assets/bg.png');
+  background-size: contain;
   background-repeat: repeat-x;
   image-rendering: pixelated;
-  background-size: 30% auto;
 }
 
 @keyframes slide {
