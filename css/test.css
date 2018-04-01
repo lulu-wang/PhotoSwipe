@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'moderna';
+  src:
+    url('../assets/fonts/moderna.ttf');
+}
+
+body {
+  background-color:#F4B5FF;
+  max-height: 100vh;
+  font-family: sans-serif;
+  background-image: url('../assets/bg2.png');
+  background-repeat: repeat-x;
+  image-rendering: pixelated;
+  background-size: 40% auto;
+}
+
+@keyframes rotate {
+  0% {transform: rotateZ(0deg) translateX(-100%);}
+  100% {transform: rotateZ(360deg) translateX(-100%);}
+}
+
+
+img.sun {
+  z-index: -1;
+  position: absolute;
+  width: 400px;
+  image-rendering: pixelated;
+  animation: rotate 100s linear 0s infinite normal;
+  top: 90%;
+  left: 40%;
+}
+
+div.city {
+  background-image: url('../assets/city.png');
+  background-repeat: repeat-x;
+  image-rendering: pixelated;
+  background-size: 40%;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+div.topNav {
+  position: fixed;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.topNav img {
+  width: 100px;
+
+}
+
+div.bgGradient {
+  z-index: -1;
+}
