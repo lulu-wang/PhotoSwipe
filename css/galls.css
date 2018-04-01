@@ -14,6 +14,7 @@ body {
   max-height: 100vh;
   font-family: sans-serif;
   background-image: url('../assets/bg3.png');
+  background-size: 50%;
   background-size: contain;
   background-repeat: repeat-x;
   image-rendering: pixelated;
@@ -38,7 +39,22 @@ div.stars {
 }
 
 div.displayPhotos {
+  margin-top: 200px;
+}
+
+div.poloroid {
+  display: inline-block;
   background-color: white;
+  margin: 50px;
+}
+
+div.poloroid .image {
+  margin:15px;
+  height:250px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div.topNav {
