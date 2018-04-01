@@ -68,6 +68,14 @@ div.topNav {
   font-family: "press start 2p", sans-serif;
   font-size: 11px;
   color: white;
+  padding-bottom: 20px;
+}
+
+.logoutBtn {
+  position: absolute;
+  display: inline-block;
+  float: right;
+  right: 20px;
 }
 
 a:hover {
@@ -80,11 +88,27 @@ div.bgGradient {
 }
 
 .scroller {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
 
 .scroll-item {
+  background-color: white;
+
+  margin: 50px;
   flex: 0 0 auto;
+}
+
+.scroll-item .image {
+  margin: 20px;
+  height: 250px;
+  background-color: black;
+  /*specified by js: background-image*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

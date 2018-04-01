@@ -1,4 +1,15 @@
-$(document).ready(funtion() {
+$(document).ready(function() {
+
+  $('.loginBtn').click(function (){
+    firebase.auth().signInAnonymously().catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+  });
+
+  var db = firebase.database();
+  var uid;
+
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
@@ -10,6 +21,7 @@ $(document).ready(funtion() {
         name: personName,
         collection: ["cool-story-bro"]
       })
+      window.location.href="/test1.html"
     }
   });
 });
